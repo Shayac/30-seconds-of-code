@@ -2,7 +2,7 @@
 
 Flip takes a function as an argument, then makes the first argument the last.
 
-Return a closure that takes variadic inputs, and splices the last argument to make it the first argument before applying the rest.
+Return a closure that takes variadic inputs, and splices the first argument to make it the last argument after applying the rest.
 
 ```js
 const flip = fn => (first, ...rest) => fn(...rest, first);
